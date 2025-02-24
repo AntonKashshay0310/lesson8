@@ -1,19 +1,16 @@
-// for (let number = 0; number < 5;) {
-//     console.log(`Число ${number}`);
-// }
-// let number = 0;
+const arr1 = [1, 5, "4", "hello"]
+const arr2 = [true,2, {}, ["a"], 222]
 
-// while (number <= 5) {
-//     console.log(`Число ${number}`)
-//     number += 1;
-// }
+console.log(arr1[1]);
+console.log(arr2[1]);
 
-let num = 10;
-// while(num >= 7) {
-//     console.log(num);
-//     num -= 1;
-// }
+console.log(arr1[1] + arr2[1]);
 
-for(let i = 10; i>= 7; i -= 1) {
-console.log(i);
-}
+// Створіть масив рядків. Виведіть в консоль значення першого елементу. Змініть значення останнього елементу.
+
+const cars = ["koenigsegg", "pagani", "ferarri", "lamborgini"]
+console.log(cars[0]);
+console.log(cars[3]);
+console.log(cars[cars.length - 1]);
+cars[cars.length - 1] = "McLaren";
+console.log(cars);
