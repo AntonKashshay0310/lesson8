@@ -16,30 +16,54 @@
 // console.log(cars);
 
 
-// Порахувати загальну суму покупок в корзині
-const carts = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
-let total = 0;
-for (const cart of carts) {
-    // console.log(cart);
-    total = total + cart;
-}
-console.log(total);
+// // Порахувати загальну суму покупок в корзині
+// const carts = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+// let total = 0;
+// for (const cart of carts) {
+//     // console.log(cart);
+//     total = total + cart;
+// }
+// console.log(total);
 
-const cartsLength = carts.length;
-console.log(cartsLength);
+// const cartsLength = carts.length;
+// console.log(cartsLength);
 
-console.log(carts[cartsLength]);
+// console.log(carts[cartsLength]);
 
-carts[cartsLength] = 22;
+// carts[cartsLength] = 22;
 
-console.log(carts);
+// console.log(carts);
 
-// Напиши скрипт пошуку самого маленького числа в масиві,  при умові, що числа унікальні (не повторюються).
-const numbers = [51, 18, 13, 24, 7, 85, 19];
-let smallestNumber = number[0]
-for (const number of numbers) {
-    if(number < smallestNumber) {
-        smallestNumber = number
-    }
-}
-console.log(`The smallest number is: ${smallestNumber}`);
+// // Напиши скрипт пошуку самого маленького числа в масиві,  при умові, що числа унікальні (не повторюються).
+// const numbers = [51, 18, 13, 24, 7, 85, 19];
+// let smallestNumber = number[0]
+// for (const number of numbers) {
+//     if(number < smallestNumber) {
+//         smallestNumber = number
+//     }
+// }
+// console.log(`The smallest number is: ${smallestNumber}`);
+
+
+// function checkAge(age) {
+//     if (age >= 18) {
+//         return "You are an adult";
+//     }
+//     return "You are a minor";
+// }
+// console.log(checkAge(15));
+
+function checkPassword(password) {
+    const ADMIN_PASSWORD = "jqueryismyjam";
+    // Change code below this line
+    let message;
+
+    if (password === ADMIN_PASSWORD) {
+      return 'Welcome!';
+    } 
+        return "Access denied, wrong password!";
+    // Change code above this line
+  }
+
+  const result = checkPassword('jqueryismyjam');
+  console.log(result);
